@@ -1,6 +1,7 @@
 import React from "react";
 import logo from "./logo.svg";
 import "./App.css";
+import Welcome from "./components/Welcome.tsx";
 
 function App() {
   return element;
@@ -29,6 +30,7 @@ const user: User = {
 
 const element: JSX.Element = (
   <div>
+    <Welcome />
     <h1> Hello {printName(user)}</h1>
     <h2> This is my react app which I am using to learn react</h2>
     <img src={user.urlOfPicture} width={200}></img>
