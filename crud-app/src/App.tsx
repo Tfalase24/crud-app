@@ -1,9 +1,10 @@
 import React from "react";
 import logo from "./logo.svg";
 import "./App.css";
-import Welcome from "./components/welcome";
+import Welcome from "./components/Welcome";
+import User from "./interfaces/User";
 
-function App() {
+function App(): JSX.Element {
   return element;
 }
 
@@ -11,13 +12,6 @@ export default App;
 
 function printName(user: User): string {
   return user.firstName + " " + user.lastName;
-}
-
-interface User {
-  firstName: string;
-  lastName: string;
-  urlOfPicture?: string;
-  descriptionOfPicture?: string;
 }
 
 const user: User = {
@@ -30,7 +24,7 @@ const user: User = {
 
 const element: JSX.Element = (
   <div>
-    <Welcome />
+    <Welcome firstName={user.firstName} lastName={user.lastName} />
     <h1> Hello {printName(user)}</h1>
     <h2> This is my react app which I am using to learn react</h2>
     <img src={user.urlOfPicture} width={200}></img>
