@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./App.css";
 import { ClickButton } from "./components/ClickButton";
+import { Form } from "./components/Form";
 import Welcome from "./components/Welcome";
 import User from "./interfaces/User";
 
@@ -14,6 +15,7 @@ function App(): JSX.Element {
       <h3>{user.descriptionOfPicture}</h3>
       <h4>{button}</h4>
       <ClickButton />
+      <Form />
     </div>
   );
 }
