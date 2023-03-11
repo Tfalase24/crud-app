@@ -1,7 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 import "./App.css";
 import { ClickButton } from "./components/ClickButton";
 import { Form } from "./components/Form";
+import { ListComponent } from "./components/listComponent";
 import Welcome from "./components/Welcome";
 import User from "./interfaces/User";
 
@@ -16,6 +17,7 @@ function App(): JSX.Element {
       <h4>{button}</h4>
       <ClickButton />
       <Form />
+      <ListComponent />
     </div>
   );
 }
@@ -27,7 +29,7 @@ function printName(user: User): string {
 }
 
 function screamFunction(e: React.MouseEvent<HTMLButtonElement>): void {
-  // e.preventDefault();
+  e.preventDefault();
   console.log("Reeeeeeeeek!!!!");
 }
 
