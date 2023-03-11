@@ -2,7 +2,7 @@ import { useState } from "react";
 
 export const ClickButton = () => {
   const [clicks, setClicks] = useState(0);
-  return clicks % 2 == 0 ? (
+  return clicks % 2 === 0 ? (
     <div>
       <button
         onClick={() => {
