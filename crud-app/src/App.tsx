@@ -3,6 +3,7 @@ import "./App.css";
 import { ClickButton } from "./components/ClickButton";
 import { Form } from "./components/Form";
 import { ListComponent } from "./components/listComponent";
+import StaffInputFields from "./components/StaffInputFields";
 import Welcome from "./components/Welcome";
 import User from "./interfaces/User";
 
@@ -18,6 +19,7 @@ function App(): JSX.Element {
       <ClickButton />
       <Form />
       <ListComponent />
+      <StaffInputFields />
     </div>
   );
 }
