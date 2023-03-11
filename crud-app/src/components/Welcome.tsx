@@ -4,7 +4,7 @@ import User from "../interfaces/User";
 function Welcome(props: User): JSX.Element {
   return (
     <div>
-      Welcome {props.firstName} {props.lastName}{" "}
+      Welcome {props.firstName} {props.lastName}
     </div>
   );
 }
