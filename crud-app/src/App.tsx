@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import "./App.css";
+import { ClickButton } from "./components/ClickButton";
 import Welcome from "./components/Welcome";
 import User from "./interfaces/User";
 
 function App(): JSX.Element {
-  const [clicks, setClicks] = useState(0);
   return (
     <div>
       <Welcome firstName={user.firstName} lastName={user.lastName} />
@@ -13,15 +13,7 @@ function App(): JSX.Element {
       <img src={user.urlOfPicture} width={200} alt="Island Boys"></img>
       <h3>{user.descriptionOfPicture}</h3>
       <h4>{button}</h4>
-      <button
-        onClick={() => {
-          setClicks(clicks + 1);
-        }}
-      >
-        {" "}
-        This is a button to literally just count how many Cherry B's have been
-        sipped on. Current {clicks} many Cherry B's
-      </button>
+      <ClickButton />
     </div>
   );
 }
