@@ -1,7 +1,11 @@
-import { FC, useState } from 'react';
+import { FC, useState, useEffect } from 'react';
 
 export const ClickButton: FC = () => {
   const [clicks, setClicks] = useState(0);
+  useEffect(() => {
+    console.log('This is my first attempt at use effect hook');
+  }, [clicks]);
+
   return clicks % 2 === 0 ? (
     <div>
       <button
