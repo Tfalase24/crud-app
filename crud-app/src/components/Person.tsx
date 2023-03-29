@@ -1,5 +1,5 @@
-import React from "react";
-import listItem from "../interfaces/listItemInterface";
+import React, { FC } from 'react';
+import listItem from '../interfaces/listItemInterface';
 
 const Person = (props: listItem) => {
   return (

@@ -1,11 +1,11 @@
-import React from "react";
-import listItem from "../interfaces/listItemInterface";
-import Person from "./Person";
+import React, { FC } from 'react';
+import listItem from '../interfaces/listItemInterface';
+import Person from './Person';
 
-export const ListComponent = () => {
+export const ListComponent: FC = () => {
   const listOfObjects: listItem[] = [
-    { id: 1, name: "Tito" },
-    { id: 2, name: "Julia" },
+    { id: 1, name: 'Tito' },
+    { id: 2, name: 'Julia' },
   ];
   return (
     <div>

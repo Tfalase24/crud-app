@@ -1,9 +1,9 @@
-import React, { FormEvent } from "react";
+import React, { FC, FormEvent } from 'react';
 
-export const Form = () => {
+export const Form: FC = () => {
   function handleForm(e: FormEvent) {
     e.preventDefault();
-    console.log("You just clicked submit");
+    console.log('You just clicked submit');
   }
   return (
     <div>

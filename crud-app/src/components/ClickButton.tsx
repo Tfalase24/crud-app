@@ -1,6 +1,6 @@
-import { useState } from "react";
+import { FC, useState } from 'react';
 
-export const ClickButton = () => {
+export const ClickButton: FC = () => {
   const [clicks, setClicks] = useState(0);
   return clicks % 2 === 0 ? (
     <div>

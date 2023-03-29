@@ -1,12 +1,12 @@
-import React from "react";
-import { useState } from "react";
-import { DisplayEmail } from "./DisplayEmail";
+import React, { FC } from 'react';
+import { useState } from 'react';
+import { DisplayEmail } from './DisplayEmail';
 
-const StaffInputFields = () => {
+const StaffInputFields: FC = () => {
   const [staff, setStaff] = useState({
-    firstName: "",
-    lastName: "",
-    emailAddress: "",
+    firstName: '',
+    lastName: '',
+    emailAddress: '',
   });
 
   function onChangeFirstName(e: React.ChangeEvent<HTMLInputElement>) {
